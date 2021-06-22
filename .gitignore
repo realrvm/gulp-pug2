@@ -16,4 +16,4 @@ reports/
 # Папка с собранными файлами проекта
 # build/
 
-./tasks/ftp_settings.json
+tasks/**/*.json
