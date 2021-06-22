@@ -1,0 +1,11 @@
+extends common/layout
+
+block vars
+  -const pageTitle="Main page"
+
+block content
+    .wrapper.flex.--dir-col
+        include includes/templates/header
+        .main
+            include includes/index/section
+        include includes/templates/footer
