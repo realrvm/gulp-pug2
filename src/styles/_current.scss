@@ -1,0 +1,26 @@
+.inner {
+    @include container;
+}
+
+.img-wrap {
+    width: 500px;
+}
+img {
+    object-fit: contain;
+    object-position: center;
+}
+
+button {
+    width: 310px;
+    height: 70px;
+    color: var(--color-white);
+    background: rebeccapurple;
+    margin-top: 40px;
+    font-size: 36px;
+}
+
+p {
+    font-size: 36px;
+    font-weight: 700;
+    margin-left: 100px;
+}

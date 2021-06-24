@@ -1,3 +1,5 @@
+@import "../base/variables";
+
 @mixin media-tablet {
 
   @media (min-width: $mediaWidthTablet) {
@@ -73,12 +75,9 @@
 	transition: all ease #{$tr}s;
 }
 
-@mixin container($max-width:"120rem", $padding:"2rem") {
+@mixin container($max-width:"79rem", $padding:"2rem") {
 	width: 100%;
 	max-width: #{$max-width};
 	padding: 0 #{$padding};
 	margin: 0 auto;
 }
-
-
-
