@@ -3,7 +3,15 @@
 }
 
 .img-wrap {
-    width: 500px;
+    width: 400px;
+
+    @include media-tablet {
+        width: 600px;
+    }
+
+    @include media-desktop {
+        width: 700px;
+    }
 }
 img {
     object-fit: contain;
@@ -17,6 +25,9 @@ button {
     background: rebeccapurple;
     margin-top: 40px;
     font-size: 36px;
+    outline: none;
+    border: none;
+    cursor: pointer;
 }
 
 p {
