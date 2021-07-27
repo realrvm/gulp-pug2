@@ -15,5 +15,6 @@ reports/
 
 # Папка с собранными файлами проекта
 # build/
+# dist/
 
-tasks/**/*.json
+# tasks/**/*.json
