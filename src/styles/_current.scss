@@ -2,6 +2,10 @@
     @include container;
 }
 
+* {
+    outline: 1px solid rebeccapurple;
+}
+
 .img-wrap {
     width: 400px;
 
