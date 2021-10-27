@@ -1,15 +1,23 @@
-// Mobile first
 $mediaWidthMobile: 320px;
 $mediaWidthTablet: 768px;
 $mediaWidthDesktop: 1024px;
 
-$colors: (
-    "black": #000000,
-    "white": #ffffff,
-);
+:root{
+  /* Reset 1rem = 10px */
+  font-size:10px;
 
-:root {
-    @each $key, $value in $colors {
-        --color-#{$key}: #{$value};
-    }
+  /* Basic colors */
+  --white:#ffffff;
+  --black:#000000;
+
+  /* Project colors */
+  --yellow:hsl(57,88%,58%);
+  --blue:hsl(220,88%,58%);
+
+  /* Layout variables */
+  --content-width:90rem;
+  --content-padding:5rem;
+
+  --header-height:10rem;
+  --keyvisual-height:60rem;
 }

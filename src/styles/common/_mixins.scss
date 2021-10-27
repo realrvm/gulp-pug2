@@ -1,5 +1,7 @@
 @import "./variables";
 
+/* Media Queries */
+
 @mixin media-tablet {
 
   @media (min-width: $mediaWidthTablet) {
@@ -19,6 +21,25 @@
   @media (min-width: $width) {
     @content;
   }
+}
+
+/* Hovers */
+
+@media(hover:hover){
+  header nav ul li a:hover{
+    background-color:var(--yellow);
+  }
+  section p a.button:hover{
+    background-color:var(--yellow);
+    color:var(--black);
+  }
+}
+
+/* Mixins */
+
+@mixin flex {
+    display: flex;
+    align-items: center;
 }
 
 @mixin font-face($name, $file, $weight: 400, $style: normal) {
