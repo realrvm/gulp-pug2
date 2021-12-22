@@ -4,5 +4,5 @@ Theme Name: theme_name_for_wordpress
 
 @import "./global/*.scss";
 @import "./common/*.scss";
-@import "../pages/**/*.scss";
 @import "./_*.scss";
+@import "./pages/**/*.scss";

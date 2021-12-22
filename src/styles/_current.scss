@@ -1,9 +1,31 @@
-.inner {
-    @include container;
+/* Globals */
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
 }
 
+.main {
+    width: 100%;
+    flex: 1;
+}
+
+.footer {
+    flex: 0;
+}
+
+img {
+    object-fit: contain;
+    object-position: center;
+}
+
+/* Current */
 * {
     outline: 1px solid rebeccapurple;
+}
+
+.inner {
+    @include container;
 }
 
 .img-wrap {
@@ -16,11 +38,6 @@
     @include media-desktop {
         width: 700px;
     }
-}
-
-img {
-    object-fit: contain;
-    object-position: center;
 }
 
 button {
