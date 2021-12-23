@@ -4,14 +4,14 @@
 
 @mixin media-tablet {
 
-  @media (min-width: $mediaWidthTablet) {
+  @media (max-width: $mediaWidthTablet) {
     @content;
   }
 }
 
 @mixin media-desktop {
 
-  @media (min-width: $mediaWidthDesktop) {
+  @media (max-width: $mediaWidthDesktop) {
     @content;
   }
 }
@@ -26,9 +26,10 @@
 
 /* Mixins */
 
-@mixin flex {
+@mixin flex($align: flex-start, $direction: row) {
     display: flex;
-    align-items: center;
+    align-items: $align;
+    flex-direction: $direction;
 }
 
 @mixin font-face($name, $file, $weight: 400, $style: normal) {

@@ -82,8 +82,9 @@ img {
 input,
 button,
 textarea,
-select {
-    font: inherit;
+select,
+a {
+    font: currentColor;
 }
 
 [type="button"]:not(:disabled),
@@ -105,7 +106,6 @@ nav,
 section {
     display: block;
 }
-
 
 abbr,
 acronym {

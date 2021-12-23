@@ -1,17 +1,12 @@
 /* Globals */
 .wrapper {
-    display: flex;
-    flex-direction: column;
+    @include flex(null, column);
     min-height: 100%;
 }
 
 .main {
     width: 100%;
     flex: 1;
-}
-
-.footer {
-    flex: 0;
 }
 
 img {
@@ -25,34 +20,19 @@ img {
 }
 
 .inner {
-    @include container;
+    max-width: 700px;
+    width: 100%;
+    margin: 0 auto;
 }
 
 .img-wrap {
-    width: 400px;
+    width: 700px;
 
     @include media-tablet {
-        width: 600px;
-    }
-
-    @include media-desktop {
-        width: 700px;
+        width: 400px;
     }
 }
 
-button {
-    width: 310px;
-    height: 70px;
-    color: var(--color-white);
-    background: rebeccapurple;
-    margin-top: 40px;
-    font-size: 36px;
-    outline: none;
-    border: none;
-}
-
-p {
-    font-size: 36px;
-    font-weight: 700;
-    margin-left: 100px;
+h2 {
+    font-size: 3rem;
 }
